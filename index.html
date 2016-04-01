@@ -17,6 +17,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/skills.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/backgrounds.css" rel="stylesheet" type="text/css" media="all" />
 <!--fonts-->
 <!-- Material Design Cards -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -38,7 +39,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){
 			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			if ( $(this.hash).offset() ) {
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			}
 		});
 	});
 </script>

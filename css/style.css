@@ -9,19 +9,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   padding: 50px 0px 50px 0px;
 }
 
-#portfolio {
-  background-color: antiquewhite;
-}
+
 
 #contact {
     /*background-color: skyblue;*/
     padding: 50px 0px;
 }
 
-#about {
-  background-color: antiquewhite;
-  /*font-size: 14px;*/
-}
+
 #summary {
   width: 100%;
 }
@@ -60,7 +55,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 .screenshot {
   width: 300px;
   height: 225px;
-  padding: 10px;
+  padding: 10px 10px 0px 10px;
 }
 
 /*.contact-grids {
@@ -320,7 +315,7 @@ display: inline-block;
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 .banner {
-    background-color: skyblue;
+
     background-size: cover;
     min-height: 500px;
         position: relative;
@@ -358,7 +353,7 @@ font-size: 2.6em;
 
 /*-- about --*/
 .about{
-	padding:6em 0 5em;
+	padding:50px;
 }
 .head-section h2{
 	font-weight: 900;
