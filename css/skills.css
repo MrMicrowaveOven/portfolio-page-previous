@@ -8,9 +8,11 @@
 
 .skills-info {
   width: 100%;
-  margin: 0px 0px 50px 0px;
+  margin: 50px 0px 50px 0px;
 }
-
+#skills {
+  background-color: antiquewhite;
+}
 .skill {
   display: flex;
   flex-direction: column;
@@ -19,6 +21,6 @@
 }
 
 #skills-container {
-  margin: 10px 15px;
+  margin: 0px 15px;
   width: 100%;
 }

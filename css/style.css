@@ -5,13 +5,58 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 
+.portfolio {
+  padding: 50px 0px 50px 0px;
+}
+
+#portfolio {
+  background-color: skyblue;
+}
+
+#contact {
+    /*background-color: skyblue;*/
+    padding: 50px 0px;
+}
+
 #summary {
   width: 100%;
 }
 
+#port-item {
+  width: 300px;
+  height: 350px;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.port-container {
+  margin: 0px 10px;
+}
+
+.port-title {
+  color: black;
+  margin: 0px 5px;
+}
+
+.port-description {
+  color: black;
+}
+
+.gallery-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mdl-card {
+}
+
 .screenshot {
-  width: 400px;
-  height: 300px;
+  width: 300px;
+  height: 225px;
+  padding: 10px;
 }
 
 /*.contact-grids {
@@ -273,7 +318,7 @@ display: inline-block;
 .banner {
     background-color: #2c58ed;
     background-size: cover;
-    min-height: 600px;
+    min-height: 500px;
         position: relative;
 }
 .banner-imagefo{
@@ -563,7 +608,7 @@ img.img-responsive.glry-img {
 }
 /*--contact-form--*/
 .contact {
-  margin-bottom: 8em;
+  /*margin-bottom: 8em;*/
 }
 .content_middle_bottom {
   padding: 8em 0 0 0;
@@ -652,7 +697,7 @@ img.img-responsive.glry-img {
 }
 .portfolio h3 {
     font-weight: 900;
-    color: #595959;
+    color: black;
     font-size: 2.3em;
     text-transform: uppercase;
     margin: 0;
