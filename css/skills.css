@@ -11,7 +11,8 @@
   margin: 50px 0px 50px 0px;
 }
 #skills {
-  background-color: antiquewhite;
+  justify-content: center;
+  background-color: skyblue;
 }
 .skill {
   display: flex;
