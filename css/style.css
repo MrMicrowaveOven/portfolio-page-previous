@@ -28,7 +28,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 #port-item {
   width: 300px;
   height: 375px;
-  background-color: grey;
+  background-color: #fffcf8;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,12 +39,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 }
 
 .port-title {
-  color: black;
+  color: #595959;
   margin: 0px 5px;
 }
 
 .port-description {
-  color: black;
+  color: #595959;
 }
 
 .gallery-info {
@@ -340,13 +340,13 @@ position: absolute;
 }
 .banner-text h1 {
 font-size: 2.6em;
-    color: #fff;
+    color: #595959;
     margin: 0;
     text-transform: uppercase;
 }
 .banner-text h2 {
     font-size: 1.3em;
-    color: #fff;
+    color: #595959;
     margin: 13px 0 23px;
     font-style: italic;
     border-top: 3px solid#fff;
@@ -700,7 +700,7 @@ img.img-responsive.glry-img {
 }
 .portfolio h3 {
     font-weight: 900;
-    color: black;
+    color: #595959;
     font-size: 2.3em;
     text-transform: uppercase;
     margin: 0;
@@ -1059,6 +1059,9 @@ color:#fff;
 	/*.skills {
 	    margin: 3em 0 3em;
 	}*/
+  #skill {
+    color: #595959;
+  }
 	.galry-grids {
 	    padding: 2px;
 	    width: 33.3333%;
