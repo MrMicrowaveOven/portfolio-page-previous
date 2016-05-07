@@ -5,10 +5,20 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 
+.link_logo {
+  width: 100px;
+  margin: 0px 10px 0px 0px;
+}
+
 .portfolio {
   padding: 50px 0px 50px 0px;
 }
 
+#about_container {
+  min-width: 1000px;
+  /*padding-left: 125px;
+  padding-right: 125px;*/
+}
 
 #contact {
     /*background-color: skyblue;*/
