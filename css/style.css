@@ -4,6 +4,9 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+#skills-container {
+  padding-left: 0px;
+}
 
 .link_logo {
   width: 100px;
@@ -14,6 +17,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   padding: 50px 0px 50px 0px;
 }
 
+.banner {
+  min-width: 700px;
+}
 #about_container {
   min-width: 1000px;
   /*padding-left: 125px;
