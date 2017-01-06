@@ -1,0 +1,22 @@
+{
+  "name": "portfolio_site",
+  "version": "1.0.0",
+  "description": "Portfolio site for Benjamin Zagorski, Software Engineer Extraordinaire!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrMicrowaveOven/PortfolioSite.git"
+  },
+  "author": "Benjamin Zagorski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrMicrowaveOven/PortfolioSite/issues"
+  },
+  "homepage": "https://github.com/MrMicrowaveOven/PortfolioSite#readme",
+  "dependencies": {
+    "jquery-validation": "^1.16.0"
+  }
+}

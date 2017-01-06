@@ -304,7 +304,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="col-md-7 contact-right">
 				<h3>Say hello!</h3>
 				<div class="stripb"> </div>
-				<form action="https://formspree.io/benj@zagorski.com" method="post">
+				<form action="https://formspree.io/benj@zagorski.com" method="post" id="contact-form">
 					<input type="text" name="name" value="Name"
 						onfocus="if (this.value == 'Name') {this.value = ''};"
 						onblur="if (this.value == '') {this.value = 'Name';}" required>
@@ -334,16 +334,33 @@ License URL: http://creativecommons.org/licenses/by/3.0/
    <!-- </div> -->
 <!-- </div> -->
    <script type="text/javascript">
-						$(document).ready(function() {
-							var defaults = {
-					  			containerID: 'toTop', // fading element id
-								containerHoverID: 'toTopHover', // fading element hover id
-								scrollSpeed: 1200,
-								easingType: 'linear'
-								};
-							$().UItoTop({ easingType: 'easeOutQuart' });
-						});
-					</script>
+			$("#contact-form").validate({
+			  submitHandler: function(form) {
+			    $.ajax({
+			      url: "//formspree.io/benj@zagorski.com",
+			      method: "POST",
+			      data: {
+			        name: $(form).find("input[name='name']").val(),
+			        _replyto: $(form).find("input[name='email']").val(),
+			        message: $(form).find("textarea[name='body']").val()
+			      },
+			      dataType: "json"
+			    });
+			  }
+			});
+
+			$(document).ready(function() {
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear'
+					};
+				$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
 				<a href="#" id="toTop" style="display: block;"><span id="toTopHover"></span><span id="toTopHover"></span> <span id="toTopHover" style="opacity: 1;"> </span></a>
 </div>
 </body>
