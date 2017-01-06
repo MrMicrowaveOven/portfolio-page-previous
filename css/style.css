@@ -813,7 +813,6 @@ font-family: 'Lato', sans-serif;
 	padding: 14px;
 	font-size: 18px;
 	font-weight:300;
-	color: #c9c9cb;
 	margin: 0 24px 24px 0;
 			transition: 0.5s all ease;
 	-webkit-transition: 0.5s all ease;
@@ -830,7 +829,6 @@ font-family: 'Lato', sans-serif;
 	outline: none;
 	font-weight:300;
 	font-size: 18px;
-	color: #c9c9cb;
 	resize: none;
 	padding: 14px;
 	margin-bottom: 24px;
@@ -846,7 +844,7 @@ margin-right:0;
 .contact-right form input[type="submit"] {
 color:#D8D8D8;
 font-family: 'Lato', sans-serif;
-  background: url(../images/mess.png) no-repeat 81px 14px;
+  /*background: url(../images/mess.png) no-repeat 81px 14px;*/
   width: 49%;
   border-radius: 4px;
   height: 52px;
