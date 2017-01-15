@@ -320,7 +320,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						onfocus="if (this.value == 'Name') {this.value = ''};"
 						onblur="if (this.value == '') {this.value = 'Name';}" required>
 					</input>
-					<input type="text" name="email" value="E-mail"
+					<input type="email" name="email" value="E-mail"
 						onfocus="if (this.value == 'E-mail'){this.value = '';}"
 						onblur="if (this.value == '') {this.value = 'E-mail';}" required>
 					</input>
@@ -352,6 +352,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			      data: {
 			        name: $(form).find("input[name='name']").val(),
 			        _replyto: $(form).find("input[name='email']").val(),
+							_subject: "Someone likes your portfolio!",
 			        message: $(form).find("textarea[name='body']").val()
 			      },
 			      dataType: "json",
@@ -365,6 +366,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			    });
 			  }
 			});
+			$("#contact-form").validate();
 
 			$(document).ready(function() {
 				var defaults = {
