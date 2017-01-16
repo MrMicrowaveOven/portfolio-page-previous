@@ -11,7 +11,7 @@ $(document).ready(function() {
       else {
         $.ajax({
           method: 'POST',
-          url: '//formspree.io/benj@zagorski.com',
+          url: 'https://formspree.io/benj@zagorski.com',
           data: $('#contact-form').serialize(),
           datatype: 'json'
         });
