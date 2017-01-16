@@ -1,8 +1,8 @@
 $(document).ready(function() {
   $('#contact-form').submit(function(e) {
-      var name = $('#inputName')
-      var email = $('#inputEmail')
-      var message = $('#inputMessage')
+      var name = $('#inputName');
+      var email = $('#inputEmail');
+      var message = $('#inputMessage');
 
       if(name.val() == "" || email.val() == "" || message.val() == "") {
         $('.submit-fail').fadeToggle(400);
@@ -23,5 +23,5 @@ $(document).ready(function() {
 
   $('.submit-fail, .submit-success').click(function() {
     $(this).hide();
-  })
+  });
 });
