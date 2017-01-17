@@ -13,11 +13,18 @@ $(document).ready(function() {
           method: 'POST',
           url: 'https://formspree.io/benj@zagorski.com',
           data: $('#contact-form').serialize(),
-          datatype: 'json'
+          datatype: 'json',
+          success: function (res) {
+            $('.submit-success').fadeIn(400);
+            $('.submit-fail').fadeOut(400);
+          },
+          error: function (xhr, status, error) {
+            $('.submit-success').fadeOut(400);
+            $('.submit-fail').fadeIn(400);
+          }
         });
         e.preventDefault();
         $(this).get(0).reset();
-        $('.submit-success').fadeToggle(400);
       }
     });
 
