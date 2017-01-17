@@ -14,16 +14,9 @@ $(document).ready(function() {
           url: 'https://formspree.io/benj@zagorski.com',
           data: $('#contact-form').serialize(),
           datatype: 'json',
-          success: function (res) {
-            console.log("Success!");
-            $('.submit-success').fadeIn(400);
-            $('.submit-fail').fadeOut(400);
-          },
-          error: function (xhr, status, error) {
-            console.log("Error!");
-            $('.submit-fail').fadeIn(400);
-            $('.submit-success').fadeOut(400);
-          }
+        }).done(function(result) {
+          $('.submit-success').fadeIn(400);
+          $('.submit-fail').fadeOut(400);
         });
         e.preventDefault();
         $(this).get(0).reset();
