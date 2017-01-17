@@ -5,6 +5,12 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 
+.submit-button {
+  padding-bottom: 5px;
+}
+.contact-right {
+  margin: 0px 0px 60px 0px;
+}
 .alert {
   display: none;
 }

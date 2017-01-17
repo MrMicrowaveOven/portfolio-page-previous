@@ -317,7 +317,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="col-md-7 contact-right">
 				<h3>Say hello!</h3>
 				<div class="stripb"> </div>
-				<!-- Hidden message to show if contact is successful. -->
 				<form id="contact-form">
           <div class="form-group center-block">
             <label for="inputName">Name</label>
@@ -334,7 +333,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <input type="text" name="_gotcha" style="display:none" />
           <input type="hidden" name="_subject" value="Someone likes your portfolio!" />
           <div class="text-center">
-            <button class="btn btn-default" type="submit" id="email-submit-btn" value="Send">Submit</button>
+						<div class="submit-button">
+            	<button class="btn btn-default" type="submit" id="email-submit-btn" value="Send">Submit</button>
+						</div>
             <div class="alert alert-danger center-block submit-fail display-none">Please check your entries.<br><a href="#"></a>
             </div>
             <div class="alert alert-success center-block submit-success display-none">Message sent<br><a href="#"></a>
