@@ -15,12 +15,14 @@ $(document).ready(function() {
           data: $('#contact-form').serialize(),
           datatype: 'json',
           success: function (res) {
+            console.log("Success!");
             $('.submit-success').fadeIn(400);
             $('.submit-fail').fadeOut(400);
           },
           error: function (xhr, status, error) {
-            $('.submit-success').fadeOut(400);
+            console.log("Error!");
             $('.submit-fail').fadeIn(400);
+            $('.submit-success').fadeOut(400);
           }
         });
         e.preventDefault();
