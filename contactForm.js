@@ -15,15 +15,14 @@ $(document).ready(function() {
           url: 'https://formspree.io/benj@zagorski.com',
           data: $('#contact-form').serialize(),
           datatype: 'json',
-        }).done(function(result) {
-          console.log("DONE!");
-          $('.submit-success').fadeIn(400);
-          $('.submit-fail').fadeOut(400);
         });
-        e.preventDefault();
-        $(this).get(0).reset();
       }
-    });
+      console.log("DONE!");
+      $('.submit-success').fadeIn(400);
+      $('.submit-fail').fadeOut(400);
+      e.preventDefault();
+      $(this).get(0).reset();
+  });
 
   $('.submit-fail, .submit-success').click(function() {
     $(this).hide();
