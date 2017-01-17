@@ -5,6 +5,7 @@ $(document).ready(function() {
       var message = $('#inputMessage');
 
       if(name.val() == "" || email.val() == "" || message.val() == "") {
+        console.log("Failure!!!");
         $('.submit-fail').fadeToggle(400);
         return false;
       }
@@ -15,6 +16,7 @@ $(document).ready(function() {
           data: $('#contact-form').serialize(),
           datatype: 'json',
         }).done(function(result) {
+          console.log("DONE!");
           $('.submit-success').fadeIn(400);
           $('.submit-fail').fadeOut(400);
         });
