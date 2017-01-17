@@ -4,15 +4,32 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+#name_display, #title_display {
+    margin: 12px 0px;
+}
+
+.banner-text {
+  margin-top: 200px;
+}
+#headshot {
+  float: right;
+  vertical-align: middle;
+  height: 470px;
+  padding: 40px 0px;
+}
 
 .submit-button {
   padding-bottom: 5px;
 }
+
 .contact-right {
   margin: 0px 0px 60px 0px;
 }
 .alert {
   display: none;
+}
+#banner_container {
+  min-height: 500px;
 }
 
 #skills-container {
@@ -362,24 +379,24 @@ display: inline-block;
     float: right;
 }
 .banner-text{
-position: absolute;
+/*position: absolute;
     top: 230px;
-    left: 75px;
+    left: 75px;*/
 }
 .banner-text h1 {
 font-size: 2.6em;
     color: #595959;
-    margin: 0;
-    text-transform: uppercase;
+    /*margin: 0;
+    text-transform: uppercase;*/
 }
 .banner-text h2 {
     font-size: 1.3em;
     color: #595959;
-    margin: 13px 0 23px;
+    /*margin: 13px 0 23px;*/
     font-style: italic;
-    border-top: 3px solid#fff;
-    width: 73%;
-    padding-top: 10px;
+    /*border-top: 3px solid#fff;*/
+    /*width: 73%;
+    padding-top: 10px;*/
     font-weight: 100;
 }
 
@@ -971,12 +988,12 @@ color:#fff;
 /*-- responsive-design --*/
 @media only screen and (max-width:1440px) {
 	.banner-text {
-	    left: 15em;
+	    /*left: 15em;*/
 	}
 }
 @media only screen and (max-width:1366px) {
 	.banner-text {
-	    left: 50px;
+	    /*left: 50px;*/
 	}
 }
 @media only screen and (max-width:1280px) {
@@ -1000,8 +1017,8 @@ color:#fff;
 	        width: 432px;
 	}
 	.banner-text {
-	    left: 5em;
-	    top: 15em;
+	    /*left: 5em;*/
+	    /*top: 15em;*/
 	}
 	.banner-text h2 {
 	    font-size: 1.1em;
@@ -1074,8 +1091,8 @@ color:#fff;
 	    min-height: 358px;
 	}
 	.banner-text {
-	    left: 2em;
-	    top: 10em;
+	    /*left: 2em;
+	    top: 10em;*/
 	}
 	.about {
 	    padding: 3em 0 1em;
@@ -1221,8 +1238,8 @@ color:#fff;
 	    min-height: 358px;
 	}
 	.banner-text {
-	    left: 2em;
-	    top: 10em;
+	    /*left: 2em;
+	    top: 10em;*/
 	}
 	.about {
 	    padding: 3em 0 1em;
@@ -1387,7 +1404,7 @@ color:#fff;
 	    font-size: 1.5em;
 	}
 	.banner-text h2 {
-	    width: 79%;
+	    /*width: 79%;*/
 	}
 	.hvr-bounce-to-right {
 	    padding: 13px 15px;
@@ -1535,15 +1552,15 @@ color:#fff;
 	    font-size: 1em;
 	}
 	.banner-text {
-	    left: 1em;
-	    top: 6em;
+	    /*left: 1em;
+	    top: 6em;*/
 	}
 	.banner-text h2 {
-	    width: 92%;
+	    /*width: 92%;*/
 	    font-size: .785em;
 	    line-height: 1.4em;
-	    margin: 4px 0 13px;
-	    padding-top: 3px;
+	    /*margin: 4px 0 13px;*/
+	    /*padding-top: 3px;*/
 	}
 	.banner {
 	    min-height: 200px;
