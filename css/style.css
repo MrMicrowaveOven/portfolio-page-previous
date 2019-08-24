@@ -30,6 +30,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 }
 #banner_container {
   min-height: 500px;
+  max-width: 910px;
 }
 
 #skills-container {
@@ -183,7 +184,6 @@ body a:hover{
 }
 .navigation {
     float: right;
-    /*max-width: 52%;*/
 }
 .search-bar {
     width: 21%;
@@ -368,7 +368,7 @@ display: inline-block;
 
     background-size: cover;
     min-height: 500px;
-        position: relative;
+    position: relative;
 }
 .banner-imagefo{
     background: url(../images/banner-image.jpg)no-repeat 150px 0px;
@@ -1693,9 +1693,15 @@ color:#fff;
 	.copy {
 	    padding: 1em 0;
 	}
-	.header {
-	    padding: .9em 0 .2em 0;
-	}
+}
+
+#contact-container {
+  width: 1080px;
+}
+
+.header {
+    max-width: 910px;
+    padding: .9em 0 .2em 0;
 }
 
 html, body {
