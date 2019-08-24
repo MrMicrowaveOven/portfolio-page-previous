@@ -17,7 +17,7 @@
   #title_display {
     text-align: center;
     font-size: larger;
-    color: #252525;
+    font-weight: inherit;
   }
   #resume-button {
 
