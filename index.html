@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Benjamin Zagorski - Web Developer</title>
+<title>Benjamin Zagorski - Software Engineer</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -19,6 +19,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/skills.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/backgrounds.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/z-mobile.css" rel="stylesheet" type="text/css" media="all" />
 <!--fonts-->
 <!-- Material Design Cards -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -52,27 +53,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <body>
 	<div class="header">
 		<div class="container">
-				<div class="logo">
-					<a href="#"><h1></h1></a>
-				</div>
 				<div class="navigation">
 					<nav class="navbar navbar-default">
 						<div class="navbar-header">
-							  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							  <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 								<span class="sr-only">Toggle navigation</span>
 								<span class="icon-bar"> </span>
 								<span class="icon-bar"> </span>
 								<span class="icon-bar"> </span>
-							  </button>
+							  </button> -->
 							</div>
-							<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+							<div class="navbar-collapse" id="bs-example-navbar-collapse-1">
 								<nav class="cl-effect-7" id="cl-effect-7">
-							  <ul class="nav navbar-nav">
-								<li class="active"><a class="scroll" href="#home">Home <span class="sr-only">(current)</span></a></li>
-								<li><a class="scroll" href="#about">About</a></li>
-								<li><a class="scroll" href="#skills">Skills</a></li>
-								<li><a class="scroll" href="#portfolio">Portfolio</a></li>
-								<li><a class="scroll" href="#contact">Contact</a></li>
+							  <ul class="nav navbar-nav" id="navbar-list">
+									<li class="active"><a class="scroll" href="#home">Home <span class="sr-only">(current)</span></a></li>
+									<li><a class="scroll" href="#about">About</a></li>
+									<li><a class="scroll" href="#skills">Skills</a></li>
+									<li><a class="scroll" href="#portfolio">Portfolio</a></li>
+									<li><a class="scroll" href="#contact">Contact</a></li>
 							  </ul>
 							  </nav>
 					  <div class="clearfix"> </div>
@@ -91,8 +89,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<img id="headshot" src="images/banner-image.jpg" alt="">
 		<div class="banner-text">
 			<h1 id="name_display">Benjamin Zagorski</h1>
-			<h2 id="title_display">Web Developer</h2>
-			<a href="Resume-BenjaminZagorski.pdf" class="hvr-bounce-to-right" target="_blank">DOWNLOAD MY RESUME</a>
+			<h2 id="title_display">Full-Stack Software Engineer</h2>
+			<div id="button-wrapper">
+				<a href="Resume-BenjaminZagorski.pdf" id="resume-button" class="hvr-bounce-to-right" target="_blank">DOWNLOAD MY RESUME</a>
+			</div>
 		</div>
 	</div>
 </div>
@@ -108,7 +108,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<!-- about-grids -->
 				<div class="about-grids">
 					<div class="col-md-6 about-left-grid" id="summary">
-						<h3>Web Developer</h3>
+						<h3>Full-Stack Software Engineer</h3>
 						<span>Available for Hire</span>
 						<p class "status-text">I'm Benjamin, an energetic web developer with hands-on experience in Ruby on Rails, Javascript, and React.js.  I come from a background in mathematics, education, and probability.</p>
 
@@ -365,7 +365,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
-				<a href="#" id="toTop" style="display: block;"><span id="toTopHover"></span><span id="toTopHover"></span> <span id="toTopHover" style="opacity: 1;"> </span></a>
+				<!-- <a href="#" id="toTop" style="display: block;"><span id="toTopHover"></span><span id="toTopHover"></span> <span id="toTopHover" style="opacity: 1;"> </span></a> -->
 </div>
 </body>
 </html>

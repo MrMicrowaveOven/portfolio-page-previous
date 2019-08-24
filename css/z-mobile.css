@@ -1,0 +1,36 @@
+@media screen and (max-width: 665px) {
+  #banner_container {
+    display: flex;
+    flex-direction: column;
+  }
+  #headshot {
+    width: 260px;
+    height: 430px;
+    margin: auto;
+    padding: 20px 0px;
+  }
+  .banner-text {
+    margin-top: 0px;
+    margin: auto;
+  }
+  #title_display {
+    text-align: center;
+  }
+  #resume-button {
+
+  }
+  #button-wrapper {
+    text-align: center;
+  }
+  #navbar-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .navigation {
+    float: none;
+  }
+}
+
+#resume-button {
+  margin-bottom: 20px !important;
+}

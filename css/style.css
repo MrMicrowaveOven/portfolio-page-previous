@@ -46,12 +46,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 }
 
 .banner {
-  min-width: 700px;
 }
-#about_container {
-  min-width: 1000px;
-  /*padding-left: 125px;
-  padding-right: 125px;*/
+
+@media screen and (min-width: 600px) {
+  #about_container {
+    padding-left: 125px;
+    padding-right: 125px;
+  }
 }
 
 #contact {
@@ -448,6 +449,10 @@ font-size: 2.6em;
 }
 .about-grids{
 	margin-top:40px;
+}
+
+.about-grids p {
+  text-align: justify;
 }
 /*--/ABOUT--*/
 /*--details--*/
@@ -1349,8 +1354,8 @@ color:#fff;
 	    border-color: rgba(231, 231, 231, 0);
 	}
 	.navigation {
-	      width: 13%;
-    margin-left: 7em;
+    width: 13%;
+    /* margin-left: 7em; */
 	}
 	.search-bar {
 	    width: 29%;
@@ -1467,7 +1472,7 @@ color:#fff;
 	}
 	.navigation {
 	    width: 18%;
-	    margin-left: 3em;
+	    /* margin-left: 3em; */
 	}
 	.banner {
 	    min-height: 315px;
