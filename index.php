@@ -219,15 +219,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 					<div class="port-container">
 							<div class="mdl-card mdl-shadow--2dp" id="port-item">
-								<a href="https://www.facebook.com/thesearchbegins/" target="_blank">
-									<img src="screenshots/ScavengerHunt.gif" class="screenshot" id="scaress">
+								<a href="https://needle-x.herokuapp.com" target="_blank">
+									<img src="screenshots/NeedleX.png" class="screenshot" id="scaress">
 								</a>
 								<div class="port-title">
-									<h4>Scavenger Hunt</h4>
+									<h4>Needle-X</h4>
 								</div>
 								<div class="port-description">
-									A Facebook Messenger Bot
+									A Map of Needle Exchanges
 								</div>
+								<a href="https://github.com/MrMicrowaveOven/NeedleX" target="_blank">
+									<img src="images/github_icon.png" class="github-icon" id="scaregh">
+								</a>
 							</div>
 					</div>
 					<div class="port-container">
