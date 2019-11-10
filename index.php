@@ -187,16 +187,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="gallery-info">
 					<div class="port-container">
 							<div class="mdl-card mdl-shadow--2dp" id="port-item">
-								<a href="http://scarebnb.us" target="_blank">
-									<img src="screenshots/ScareBnb.png" class="screenshot" id="scaress">
+								<a href="https://mrmicrowaveoven.github.io/DrinkSelector/" target="_blank">
+									<img src="screenshots/DrinkSelector.png" class="screenshot" id="scaress">
 								</a>
 								<div class="port-title">
-									<h4>ScareBnb</h4>
+									<h4>DrinkSelector</h4>
 								</div>
 								<div class="port-description">
-									View haunted sites in the bay area
+									Try a new drink tonight!
 								</div>
-								<a href="https://github.com/mrmicrowaveoven/scarebnb" target="_blank">
+								<a href="https://github.com/MrMicrowaveOven/DrinkSelector" target="_blank">
 									<img src="images/github_icon.png" class="github-icon" id="scaregh">
 								</a>
 							</div>
