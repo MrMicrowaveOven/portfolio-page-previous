@@ -4,6 +4,7 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+
 #name_display, #title_display {
     margin: 12px 0px;
 }
@@ -1713,4 +1714,10 @@ color:#fff;
 
 html, body {
   overflow-x: hidden;
+}
+
+.portfolio-github-link {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
