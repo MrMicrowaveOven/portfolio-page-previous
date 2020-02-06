@@ -408,13 +408,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
    <script type="text/javascript">
 			$(document).ready(function() {
 				var defaults = {
-		  			containerID: 'toTop', // fading element id
+					containerID: 'toTop', // fading element id
 					containerHoverID: 'toTopHover', // fading element hover id
 					scrollSpeed: 1200,
 					easingType: 'linear'
-					};
-				$().UItoTop({ easingType: 'easeOutQuart' });
+				};
+				// $().UItoTop({ easingType: 'easeOutQuart' });
+				// Variable Favicon
+				var favicons = ['bulbasaur.ico','charmander.ico', 'pikachu.ico']
+				var faviconName = favicons[Math.floor(Math.random() * favicons.length)]
+				$("link[rel='shortcut icon']").attr("href", faviconName);
 			});
+
 		</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
