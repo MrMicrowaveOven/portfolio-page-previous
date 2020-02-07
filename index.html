@@ -12,7 +12,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Mungo Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico?"/>
+<link id="favicon" rel="shortcut icon" type="image/x-icon" href="favicon.ico?"/>
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
@@ -414,11 +414,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					easingType: 'linear'
 				};
 				// $().UItoTop({ easingType: 'easeOutQuart' });
-				// Variable Favicon
-				var favicons = ['bulbasaur.ico','charmander.ico', 'pikachu.ico']
-				var faviconName = favicons[Math.floor(Math.random() * favicons.length)]
-				document.querySelector("link[rel*='icon']").href = faviconName;
 			});
+			// Variable Favicon
+			var favicon = document.getElementById('favicon');
+			var favicons = ['bulbasaur.ico','charmander.ico', 'pikachu.ico']
+			var faviconName = favicons[Math.floor(Math.random() * favicons.length)]
+			favicon.href = faviconName;
 
 		</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
