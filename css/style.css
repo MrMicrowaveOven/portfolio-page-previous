@@ -1720,4 +1720,11 @@ html, body {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  margin-bottom: 10px;
+}
+
+.github-portfolio-icon {
+  display: block;
+  width: 100px;
+  margin: auto;
 }
