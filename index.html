@@ -417,7 +417,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				// Variable Favicon
 				var favicons = ['bulbasaur.ico','charmander.ico', 'pikachu.ico']
 				var faviconName = favicons[Math.floor(Math.random() * favicons.length)]
-				$("link[rel='shortcut icon']").attr("href", faviconName);
+				document.querySelector("link[rel*='icon']").href = faviconName;
 			});
 
 		</script>
