@@ -1735,6 +1735,11 @@ color:#fff;
     cursor: pointer;
 }
 
+.nav-button:hover {
+    color: white;
+    background-color: black;
+}
+
 @media screen and (max-width: 665px) {
     .top-nav-bar-container {
         height: 30px;
