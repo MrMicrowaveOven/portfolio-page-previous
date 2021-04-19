@@ -157,7 +157,7 @@ body a:hover{
     font-weight: 500;
 }
 .navbar-nav {
-    margin-left: 47px;
+    /* margin-left: 47px; */
 }
 .navbar-nav > li {
     float: left;
@@ -166,9 +166,7 @@ body a:hover{
 .navbar-nav > li > a {
     padding: 9px 16px;
 }
-.header {
-    padding: .6em 0;
-}
+
 .logo {
     width: 23%;
     float: left;
@@ -1707,9 +1705,53 @@ color:#fff;
   /* width: 1080px; */
 }
 
-.header {
-    max-width: 910px;
-    padding: 0 0 .2em 0;
+.top-nav-bar-container {
+    max-width: 920px;
+    margin: auto;
+    height: 40px;
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+}
+
+.top-nav-bar {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-button {
+    flex: 1;
+    color: black;
+    line-height: 30px;
+    text-align: center;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    max-width: 140px;
+    height: 30px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 665px) {
+    .top-nav-bar-container {
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .top-nav-bar {
+        height: 30px;
+    }
+
+    .nav-button {
+        max-width: 80px;
+        height: 20px;
+    }
+    .nav-button-text {
+        line-height: 20px;
+    }
 }
 
 html, body {

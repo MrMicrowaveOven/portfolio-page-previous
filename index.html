@@ -61,40 +61,36 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- start-smooth-scrolling -->
 </head>
 <body>
-	<div class="header">
-		<div class="container">
-				<div class="navigation">
-					<nav class="navbar navbar-default">
-						<div class="navbar-header">
-							  <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"> </span>
-								<span class="icon-bar"> </span>
-								<span class="icon-bar"> </span>
-							  </button> -->
-							</div>
-							<div class="navbar-collapse" id="bs-example-navbar-collapse-1">
-								<nav class="cl-effect-7" id="cl-effect-7">
-							  <ul class="nav navbar-nav" id="navbar-list">
-									<li class="active"><a class="scroll" href="#home">Home <span class="sr-only">(current)</span></a></li>
-									<li><a class="scroll" href="#about">About</a></li>
-									<li><a class="scroll" href="#skills">Skills</a></li>
-									<li><a class="scroll" href="#portfolio">Portfolio</a></li>
-									<li><a class="scroll" href="#contact">Contact</a></li>
-							  </ul>
-							  </nav>
-					  <div class="clearfix"> </div>
-					</div><!-- /.navbar-collapse -->
-				</nav>
-			</div>
-	<!-- <div class="search-bar">
-			<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-			<input type="submit" value="">
-	   </div> -->
-	<div class="clearfix"> </div>
-	</div>
+<div class="top-nav-bar-container">
+		<div class="top-nav-bar">
+				<a class="nav-button">
+					<div class="nav-button-text scroll-home">
+						Home
+					</div>
+				</a>
+				<a class="nav-button">
+					<div class="nav-button-text scroll-about">
+						About
+					</div>
+				</a>
+				<a class="nav-button">
+					<div class="nav-button-text scroll-skills">
+						Skills
+					</div>
+				</a>
+				<a class="nav-button">
+					<div class="nav-button-text scroll-portfolio">
+						Portfolio
+					</div>
+				</a>
+				<a class="nav-button">
+					<div class="nav-button-text scroll-contact">
+						Contact
+					</div>
+				</a>
+		</div>
 </div>
-<div class="banner">
+<div class="banner scroll-to-home">
 	<div class="container" id="banner_container">
 		<img id="headshot" src="images/banner-image.jpg" alt="">
 		<div class="banner-text">
@@ -110,7 +106,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>
 </div>
 <!--about-->
-<div id="about" class="about">
+<div id="about" class="about scroll-to-about">
 			<div id="about_container" class="container">
 				<!-- head-section -->
 				<div class="head-section text-center">
@@ -139,7 +135,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!---pop-up-box---->
 
 <!--skills-->
-<div class="skills" id="skills">
+<div class="skills scroll-to-skills" id="skills">
 	<div class="container" id="skills-container">
 		<div class="skills-info">
 			<h3>Skills</h3>
@@ -235,7 +231,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				});
 				</script> -->
 			<!--//end-gallery js -->
-<div id="portfolio" class="portfolio">
+<div id="portfolio" class="portfolio scroll-to-portfolio">
 			<div class="container">
 				<h3>Portfolio</h3>
 				<span> </span>
@@ -346,7 +342,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
 <!--/portfolio-->
 <!--contact-->
-<div class="contact" id="contact">
+<div class="contact scroll-to-contact" id="contact">
 	<div class="container" id="contact-container">
 		<div class="contact-info text-center">
 			<h3>CONTACT</h3>
@@ -421,6 +417,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					scrollSpeed: 1200,
 					easingType: 'linear'
 				};
+
+				$(".nav-button").click(function(e) {
+						var childClass = e.currentTarget.children[0].className
+						var scrollIndex = childClass.indexOf("scroll")
+						var navIndex = scrollIndex + 7
+						var scrollToClass = "scroll-to-" + childClass.slice(navIndex)
+						console.log(scrollToClass)
+						$('html, body').animate({
+						    scrollTop: ($('.' + scrollToClass).offset().top)
+						}, 500);
+				});
 				// $().UItoTop({ easingType: 'easeOutQuart' });
 			});
 			// Variable Favicon
