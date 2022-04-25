@@ -14,14 +14,32 @@ $(document).ready(function() {
         return false;
       }
       else {
+        var name = $('#inputName').val()
+        var email = $('#inputEmail').val()
+        var message = $('#inputMessage').val()
         $.ajax({
-          method: 'POST',
-          url: 'https://formspree.io/benj@zagorski.com',
-          data: $('#contact-form').serialize(),
-          datatype: 'json',
-        });
+          type: 'POST',
+          url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+          data: {
+            'key': 'a767b334ee202bf9650b23aa5b3ec189-us4',
+            'message': {
+              'from_email': $('#inputEmail').val(),
+              'to': [
+                  {
+                    'email': 'benj@zagorski.com ',
+                    'type': 'to'
+                  }
+                ],
+              'autotext': 'true',
+              'subject': "Someone's interested!",
+              'html': name + ' from ' + email + ' sent a message.  Here it is:  ' + message
+            }
+          }
+         }).done(function(response) {
+           console.log(response); // if you're into that sorta thing
+         });
       }
-      console.log("DONE!");
+      // console.log("DONE!");
       $('.submit-success').fadeIn(400);
       $('.submit-fail').fadeOut(400);
       e.preventDefault();
