@@ -1,20 +1,20 @@
 .banner {
-  background-color: #1A8FE3;
+  background-color: skyblue;
 }
 
 #about {
-  background-color: #6610F2;
+  background-color: antiquewhite;
   /*font-size: 14px;*/
 }
 
 #skills {
-  background-color: #D11149;
+  background-color: skyblue;
 }
 
 #portfolio {
-  background-color: #F17105;
+  background-color: antiquewhite;
 }
 
 #contact {
-  background-color: #E6C229;
+  background-color: white;
 }
